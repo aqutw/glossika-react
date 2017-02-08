@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400italic,400,300,700|Open+Sans:400italic,400,300,700,600&subset=cyrillic,cyrillic-ext,latin,greek-ext,greek,latin-ext,vietnamese);
+.accordion-trigger{cursor:pointer;}
 .gl-Products {
   margin: 0.75em;
   margin-top: 2em; }
