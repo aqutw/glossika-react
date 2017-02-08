@@ -36,10 +36,14 @@ export class CourseDetail extends React.Component {
       book2: isBook2ContentShow ? {display:''} : {display:'none'},
       book3: isBook3ContentShow ? {display:''} : {display:'none'},
     };
+
+    const a = this.props.params.courseName.split('---');
+    const courseName1 = a[0];
+    const courseName2 = a[1];
     return (
       <div><link rel="stylesheet" href="/css/shop.css" /><Header />
       <header className="gl-ProductDetail_Section">
-    <h1>Fluency 123 — Belarusian</h1>
+    <h1 style={{textTransform:'capitalize'}}>{courseName1 + ' - ' + courseName2 + ' ' + Math.floor(Math.random()*1000000)}</h1>
 
     <div className="gl-ProductDetail_Section-content">
         <div className="gl-ProductDetail_Section-image">

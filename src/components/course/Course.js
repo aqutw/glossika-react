@@ -97,7 +97,7 @@ export class Course extends React.Component {
             </div>
         </div>
         {aryCourses.map(v=>{
-          v.lnk = v.lnk.replace('/', '---');
+          v.lnk = 'courses/' + v.lnk.replace('/', '---');
           return (
             <div key={v.lnk} className="gl-Products_Card">
                 <div className="gl-Products_Card-header">
