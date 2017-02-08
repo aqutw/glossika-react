@@ -12,6 +12,7 @@ import CourseDetail from './components/course/CourseDetail';
 import Help from './components/help/Help';
 import FAQ from './components/faq/FAQ';
 import SignUp from './components/signup/SignUp';
+import NotFound from './components/NotFound';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route path="howto" component={Help} />
         <Route path="faq" component={FAQ} />
         <Route path="register" component={SignUp} />
+        <Route path="*" component={NotFound} />
       </Route>
     </Router>
   </Provider>
