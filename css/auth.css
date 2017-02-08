@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400italic,400,300,700|Open+Sans:400italic,400,300,700,600&subset=cyrillic,cyrillic-ext,latin,greek-ext,greek,latin-ext,vietnamese);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+.gl-AuthPage {
+  background: #336596;
+  background: #336596;
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  perspective: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .gl-AuthPage form, .gl-AuthPage input {
+    font-family: Roboto, sans-serif; }
+  .gl-AuthPage .error, .gl-AuthPage .gl-FormError {
+    color: #cc0000; }
+  .gl-AuthPage button[type=submit] {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    width: 100%; }
+  .gl-AuthPage .gl-FormError {
+    font-size: 0.8em;
+    font-weight: 700; }
+  .gl-AuthPage .gl-FormNote {
+    font-size: 0.8em;
+    text-align: left; }
+  .gl-AuthPage .gl-AuthCard {
+    background: #fff;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+    flex: 1;
+    max-width: 360px;
+    padding: 1.5em;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    .gl-AuthPage .gl-AuthCard > div {
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
+    .gl-AuthPage .gl-AuthCard .gl-AuthCard_back {
+      display: none;
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+  .gl-AuthPage .gl-AuthCard_flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+    .gl-AuthPage .gl-AuthCard_flipped .gl-AuthCard_front {
+      display: none; }
+    .gl-AuthPage .gl-AuthCard_flipped .gl-AuthCard_back {
+      display: block; }
