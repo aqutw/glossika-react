@@ -8,6 +8,7 @@ import App from './components/app';
 import Home from './components/home/Home';
 import Blog from './components/blog/Blog';
 import Course from './components/course/Course';
+import CourseDetail from './components/course/CourseDetail';
 import Help from './components/help/Help';
 import FAQ from './components/faq/FAQ';
 import SignUp from './components/signup/SignUp';
@@ -22,6 +23,7 @@ ReactDOM.render(
         <IndexRoute component={Home} />
         <Route path="blog" component={Blog} />
         <Route path="courses" component={Course} />
+        <Route path="courses/:courseName" component={CourseDetail} />
         <Route path="howto" component={Help} />
         <Route path="faq" component={FAQ} />
         <Route path="register" component={SignUp} />
