@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../Header';
 import Footer from '../Footer';
+import { Link } from 'react-router';
 
 function mapStateToProps(state) {
   return {
@@ -97,22 +98,22 @@ export class Course extends React.Component {
             </div>
         </div>
         {aryCourses.map(v=>{
-          v.lnk = 'courses/' + v.lnk.replace('/', '---');
+          const lnk = '/courses/' + v.lnk.replace('/', '---');
           return (
-            <div key={v.lnk} className="gl-Products_Card">
+            <div key={lnk} className="gl-Products_Card">
                 <div className="gl-Products_Card-header">
                     <h3>{v.title}</h3>
-                    <a href={v.lnk}>
+                    <Link to={lnk}>
                         <img src={v.photo} />
-                    </a>
+                    </Link>
                 </div>
                 <div className="gl-Products_Card-copy">
                     <p>{v.desc}</p>
                 </div>
                 <div className="gl-Products_Card-footer">
-                    <a href={v.lnk}>
+                    <Link to={lnk}>
                         Learn More
-                    </a>
+                    </Link>
                 </div>
             </div>)
         })}
