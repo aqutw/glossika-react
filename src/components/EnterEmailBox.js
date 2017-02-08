@@ -18,7 +18,7 @@ export class EnterEmailBox extends React.Component {
 
   render() {
     return (
-      <div id="mc-pop-signup" style="display: block;">
+      <div id="mc-pop-signup" style={{display:'block'}}>
     <header>
         <button type="button" className="mc-pop-close-btn">
             <span className="fa fa-times fa-lg"></span>

@@ -6,6 +6,11 @@ import Intro from './Intro';
 import Feature from './Feature';
 import FeatureScrollBg from './FeatureScrollBg';
 import FeatureMemory from './FeatureMemory';
+import FeatureFluency from './FeatureFluency';
+import FeatureBridging from './FeatureBridging';
+import FeatureChallenge from './FeatureChallenge';
+import FeatureProgress from './FeatureProgress';
+import FeatureMore from './FeatureMore';
 
 function mapStateToProps(state) {
   return {
@@ -24,7 +29,10 @@ export class Home extends React.Component {
 
   render() {
     return (<div><Hero /><Intro /><Feature />
-      <FeatureScrollBg /><FeatureMemory /></div>)
+      <FeatureScrollBg /><FeatureMemory /><FeatureFluency />
+      <FeatureBridging /><FeatureChallenge />
+      <FeatureProgress /><FeatureMore />
+      </div>)
   }
 }
 
