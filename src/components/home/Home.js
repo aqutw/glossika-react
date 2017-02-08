@@ -11,6 +11,8 @@ import FeatureBridging from './FeatureBridging';
 import FeatureChallenge from './FeatureChallenge';
 import FeatureProgress from './FeatureProgress';
 import FeatureMore from './FeatureMore';
+import Header from '../Header';
+import Footer from '../Footer';
 
 function mapStateToProps(state) {
   return {
@@ -28,10 +30,13 @@ export class Home extends React.Component {
   }
 
   render() {
-    return (<div><Hero /><Intro /><Feature />
+    return (<div>
+      <Header />
+      <Hero /><Intro /><Feature />
       <FeatureScrollBg /><FeatureMemory /><FeatureFluency />
       <FeatureBridging /><FeatureChallenge />
       <FeatureProgress /><FeatureMore />
+      <Footer />
       </div>)
   }
 }

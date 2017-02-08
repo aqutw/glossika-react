@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class Header extends Component {
   render() {
     return (<div>
       <header className="gl-FixedTop">
         <div className="gl-FixedTop_Logo">
-            <a href="/">
+            <Link to="/">
                 <img src="/img/logo.png" alt="Glossika" />
                 <h1>Glossika</h1>
-            </a>
+            </Link>
         </div>
         <input type="checkbox" id="nav-trigger" className="nav-trigger" />
         <label htmlFor="nav-trigger"><span className="fa fa-bars fa-2x"></span></label>
         <nav role="navigation" className="gl-FixedTop_Nav">
             <ul>
-                <li><a href="/blog/tag/glossika-blog-english/">Blog</a></li>
-                <li><a href="/courses/">Courses</a></li>
-                <li><a href="/howto/">Help</a></li>
-                <li><a href="/faq/">FAQ</a></li>
+                <li><Link to="/blog/">Blog</Link></li>
+                <li><Link to="/courses/">Courses</Link></li>
+                <li><Link to="/howto/">Help</Link></li>
+                <li><Link to="/faq/">FAQ</Link></li>
                 <li>
                     <a className="gl-LabeledLink" href="#set-language">
                         <span className="fa fa-globe fa-lg"></span>

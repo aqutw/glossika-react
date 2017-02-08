@@ -40,7 +40,7 @@ export class FeatureMore extends React.Component {
         
     </div>
 
-    <twitterwidget className="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="741458117460905984" style={{'position': 'static', 'visibility': 'visible', 'display': 'block', 'transform': 'rotate(0deg)', 'max-width': '100%', 'width': '500px', 'min-width': '220px', 'margin-top': '10px', 'margin-bottom': '10px'}}></twitterwidget>
+    <twitterwidget className="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="741458117460905984" style={{'position': 'static', 'visibility': 'visible', 'display': 'block', 'transform': 'rotate(0deg)', 'maxWidth': '100%', 'width': '500px', 'minWidth': '220px', 'marginTop': '10px', 'marginBottom': '10px'}}></twitterwidget>
 </section>
     );
   }
