@@ -26,7 +26,7 @@ export default class Header extends Component {
                         <span>(EN)</span>
                     </a>
                 </li>
-                    <li><a href="/register">Sign Up</a></li>
+                    <li><Link to="/register">Sign Up</Link></li>
             </ul>
         </nav>
     </header>
