@@ -1,0 +1,14 @@
+.blog-logo img {
+  width: 64px;
+  height: 64px;
+  padding: 0; }
+
+.text_shadow_on_image, .page-title, .page-description {
+  text-shadow: 0 0 20px #000000;
+  -webkit-text-shadow: 0 0 20px #000000;
+  -moz-text-shadow: 0 0 20px #000000;
+  -o-text-shadow: 0 0 20px #000000;
+  -ms-text-shadow: 0 0 20px #000000; }
+
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+  width: 100% !important; }
