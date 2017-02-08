@@ -31,6 +31,7 @@ export class Home extends React.Component {
 
   render() {
     return (<div>
+      <link rel="stylesheet" href="/css/home.css" />
       <Header />
       <Hero /><Intro /><Feature />
       <FeatureScrollBg /><FeatureMemory /><FeatureFluency />
