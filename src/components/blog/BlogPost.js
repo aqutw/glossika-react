@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
 function mapStateToProps(state) {
   return {
@@ -21,10 +22,10 @@ export class BlogPost extends React.Component {
     return (
       <article key={post.title} className="post tag-glossika-blog-english tag-chinese-new-year tag-chinese">
     <header className="post-header">
-        <h2 className="post-title"><a href="/blog/how-will-the-year-of-rooster-2017-affect-you/">{post.title}</a></h2>
+        <h2 className="post-title"><Link to="/blog/how-will-the-year-of-rooster-2017-affect-you/">{post.title}</Link></h2>
     </header>
     <section className="post-excerpt">
-        <p>{post.content} <a className="read-more" href="/blog/how-will-the-year-of-rooster-2017-affect-you/">»</a></p>
+        <p>{post.content} <Link className="read-more" to="/blog/how-will-the-year-of-rooster-2017-affect-you/">»</Link></p>
     </section>
     <footer className="post-meta">
       {post.tag.map(tag => {
