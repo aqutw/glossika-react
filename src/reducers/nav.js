@@ -12,5 +12,5 @@ const reducerFuncs = {
 };
 
 export default function(state = [], action) {
-  return reducerFuncs[action.type](state, action) || state;
+  return reducerFuncs[action.type] ? reducerFuncs[action.type](state, action) : state;
 }
