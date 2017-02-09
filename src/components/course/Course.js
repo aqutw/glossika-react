@@ -4,10 +4,11 @@ import Header from '../Header';
 import Footer from '../Footer';
 import { Link } from 'react-router';
 import '../../../css/shop.css';
+import * as CourseActions from '../../actions/course-actions';
 
 function mapStateToProps(state) {
   return {
-
+    curLang: state.course.curLang
   };
 }
 
@@ -15,11 +16,20 @@ const aryCourses = [{"title":"Fluency 123 ~ Arabic (Standard)","photo":"/img/pro
 
 export class Course extends React.Component {
   static propTypes = {
-    name: React.PropTypes.string,
+    curLang: React.PropTypes.string,
+    changeCourseLanguageAction: React.PropTypes.func.isRequired,
   };
 
   constructor(props) {
     super(props);
+  }
+
+  changeCourseLanguageHandler(e) {
+    const { changeCourseLanguageAction } = this.props;
+    // stackoverflow.com/questions/30306486/get-selected-option-text-using-react-js
+    const index = e.nativeEvent.target.selectedIndex;
+    const text = e.nativeEvent.target[index].text;
+    changeCourseLanguageAction(text)
   }
 
   render() {
@@ -49,7 +59,7 @@ export class Course extends React.Component {
                 <form action="/courses/" method="post">
                     <input type="hidden" name="csrftoken" value="grxC2sTw-tEDyI2mokUy3iT69XcJYf8LjXuM" />
                     <label htmlFor="select-source-language">What language are you interested in?</label>
-                    <select id="select-source-language" name="target" onchange="this.form.submit()">
+                    <select id="select-source-language" name="target" onChange={this.changeCourseLanguageHandler.bind(this)}>
                         <option>Select a Language</option>
                         <option value="ar">Arabic (Standard)</option>
                         <option value="hy">Armenian</option>
@@ -126,5 +136,5 @@ export class Course extends React.Component {
 
 export default connect(
   mapStateToProps,
-// Implement map dispatch to props
+  {...CourseActions}
 )(Course)
