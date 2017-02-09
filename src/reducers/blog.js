@@ -1,14 +1,18 @@
 import {
-  FETCH_POSTS
+  FETCH_POSTS,
+  FETCH_POST_BY_TITLE
 } from '../actions/types';
 
-const defaultState = {posts:[]};
+const defaultState = {posts:[], curPost:{title:'', content:''}};
 
 const reducerFuncs = {
   [FETCH_POSTS]: (state, action) => {
-    console.log('----------action.promisePayload', action.promisePayload);
     const ret = Object.assign({...state}, {posts:action.promisePayload.data})
-    console.log(ret)
+    return ret;
+  },
+  [FETCH_POST_BY_TITLE]: (state, action) => {
+    const curPost = action.promisePayload.data;
+    const ret = Object.assign({...state}, {curPost:curPost});
     return ret;
   }
 };

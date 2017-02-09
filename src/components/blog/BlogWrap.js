@@ -46,10 +46,11 @@ export class Blog extends React.Component {
       <div className="site-wrapper">
       <BlogHeader />
       <main className="content" role="main">
-      {this.props.children}
+      {this.props.children[0]}
       </main>
-    </div>{/*site-wrapper*/}
+      {this.props.children[1]}
     <BlogFooter />
+    </div>{/*site-wrapper*/}
       </div>
     );
   }
