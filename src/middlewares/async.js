@@ -9,7 +9,7 @@ export default function({dispatch}) {
     action.promisePayload.then(res => {
       const newAction = { ...action, promisePayload: res }
 
-      if (action.courseCurLang) { // course list only
+      if (action.courseCurLang && action.courseCurLang.indexOf('Select a Lang')===-1) { // course list only
         res.data = res.data.filter(item => {
           return item.title.indexOf(action.courseCurLang)>=0;
         });
