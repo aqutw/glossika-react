@@ -2,7 +2,7 @@
 html {
   height: auto; }
 
-body {
+body div.homePage {
   height: auto;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://s3-us-west-2.amazonaws.com/glossika-www/home-hero-bg-760.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://s3-us-west-2.amazonaws.com/glossika-www/home-hero-bg-760.jpg");
@@ -15,10 +15,10 @@ body {
   background-attachment: fixed;
   min-height: 100%; }
   @media (min-width: 640px) {
-    body {
+    body div.homePage{
       background-attachment: fixed; } }
   @media (min-width: 640px) {
-    body {
+    body div.homePage{
       background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://s3-us-west-2.amazonaws.com/glossika-www/home-hero-bg-1024.jpg");
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://s3-us-west-2.amazonaws.com/glossika-www/home-hero-bg-1024.jpg");
       background-repeat: no-repeat;
@@ -29,10 +29,10 @@ body {
       height: 100%;
       background-attachment: scroll; } }
   @media (min-width: 640px) and (min-width: 640px) {
-    body {
+    body div.homePage{
       background-attachment: fixed; } }
   @media (min-width: 1280px) {
-    body {
+    body div.homePage{
       background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://s3-us-west-2.amazonaws.com/glossika-www/home-hero-bg-1600.jpg");
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://s3-us-west-2.amazonaws.com/glossika-www/home-hero-bg-1600.jpg");
       background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body {
       color: #fff;
       height: 100%; } }
   @media (min-width: 1280px) and (min-width: 640px) {
-    body {
+    body div.homePage{
       background-attachment: fixed; } }
 
 section {

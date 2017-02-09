@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Header from '../Header';
 import Footer from '../Footer';
 import { Link } from 'react-router';
+import '../../../css/shop.css';
 
 function mapStateToProps(state) {
   return {
@@ -23,8 +24,7 @@ export class Course extends React.Component {
 
   render() {
     return (
-      <div>
-      <link rel="stylesheet" href="/css/shop.css" /><Header />
+      <div><Header />
      <section className="gl-Products">
 
     <div className="gl-Products_Info">

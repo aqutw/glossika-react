@@ -14,6 +14,7 @@ import FeatureMore from './FeatureMore';
 import Header from '../Header';
 import Footer from '../Footer';
 
+import '../../../css/home.css';
 function mapStateToProps(state) {
   return {
 
@@ -30,8 +31,7 @@ export class Home extends React.Component {
   }
 
   render() {
-    return (<div>
-      <link rel="stylesheet" href="/css/home.css" />
+    return (<div className="homePage">
       <Header />
       <Hero /><Intro /><Feature />
       <FeatureScrollBg /><FeatureMemory /><FeatureFluency />

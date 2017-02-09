@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import Header from '../Header';
 import Footer from '../Footer';
 import { Link } from 'react-router';
+import '../../../css/shop.css';
 
 function mapStateToProps(state) {
   return {
@@ -42,7 +43,7 @@ export class CourseDetail extends React.Component {
     const courseName1 = a[0];
     const courseName2 = a[1];
     return (
-      <div><link rel="stylesheet" href="/css/shop.css" /><Header />
+      <div><Header />
       <header className="gl-ProductDetail_Section">
     <h1 style={{textTransform:'capitalize'}}>{courseName1 + ' - ' + courseName2 + ' ' + Math.floor(Math.random()*1000000)}</h1>
 

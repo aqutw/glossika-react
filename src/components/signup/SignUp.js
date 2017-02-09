@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
+import '../../../css/auth.css';
 
 function mapStateToProps(state) {
   return {
@@ -20,7 +21,6 @@ export class SignUp extends React.Component {
   render() {
     return (
       <div className="gl-AuthPage">
-      <link rel="stylesheet" href="/css/auth.css" />
     <div className="gl-AuthCard">
     <div className="gl-AuthCard_front">
     <h2>Sign Up For Glossika</h2>
