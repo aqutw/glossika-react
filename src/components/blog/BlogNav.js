@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import * as actions from '../../actions/nav-actions';
 
 function mapStateToProps(state) {
   return {
@@ -9,28 +10,20 @@ function mapStateToProps(state) {
 
 export class BlogNav extends React.Component {
   static propTypes = {
-    name: React.PropTypes.string,
+    navCloseAction: React.PropTypes.func,
   };
 
   constructor(props) {
     super(props);
-    this.navClassName = {close: 'nav-closed', open: 'nav-opened'}
-    this.state = {
-      navClassName: this.navClassName.close
-    };
-  }
-
-  toggleSideNav() {
-    const {navClassName} = this.state;
-    const o = {navClassName: navClassName===this.navClassName.close ? this.navClassName.open : this.navClassName.close};
-    this.setState(o);
   }
 
   render() {
+    const { navCloseAction } = this.props;
+
     return (
       <div className="nav">
     <h3 className="nav-title">Menu</h3>
-    <a href="#" className="nav-close" onClick={this.toggleSideNav.bind(this)}>
+    <a href="#" className="nav-close" onClick={navCloseAction}>
         <span className="hidden">Close</span>
     </a>
     <ul>
@@ -58,5 +51,5 @@ export class BlogNav extends React.Component {
 
 export default connect(
   mapStateToProps,
-// Implement map dispatch to props
+  actions
 )(BlogNav)

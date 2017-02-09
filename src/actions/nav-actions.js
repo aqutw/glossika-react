@@ -1,6 +1,7 @@
 import { NAV_CLOSE, NAV_OPEN } from './types';
 
 export function navOpenAction() {
+  console.log('navOpenAction');
   return {
     type: NAV_OPEN
   };
