@@ -15,8 +15,9 @@ import FAQ from './components/faq/FAQ';
 import SignUp from './components/signup/SignUp';
 import NotFound from './components/NotFound';
 import reducers from './reducers';
+import Async from './middlewares/async';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(Async)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
