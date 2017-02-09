@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400italic,400,300,700|Open+Sans:400italic,400,300,700,600&subset=cyrillic,cyrillic-ext,latin,greek-ext,greek,latin-ext,vietnamese);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-#container,#container>[data-reactid]{height:100%;}
+#container,#container>[data-reactid]{height:100vh;}
 .gl-AuthPage {
   background: #336596;
   background: #336596;
