@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
+import { loadingBarMiddleware } from 'react-redux-loading-bar'
 import App from './components/app';
 import Home from './components/home/Home';
 import Blog from './components/blog/Blog';
@@ -16,6 +17,8 @@ import SignUp from './components/signup/SignUp';
 import NotFound from './components/NotFound';
 import reducers from './reducers';
 import Async from './middlewares/async';
+import Test1 from './middlewares/test1';
+import Test2 from './middlewares/test2';
 
 const createStoreWithMiddleware = applyMiddleware(Async)(createStore);
 

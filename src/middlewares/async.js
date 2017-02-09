@@ -1,3 +1,5 @@
+import { showLoading, hideLoading } from 'react-redux-loading-bar'
+
 export default function({dispatch}) {
   return next => action => {
     console.log(action);
@@ -6,6 +8,7 @@ export default function({dispatch}) {
       return next(action);
     }
 
+    dispatch(showLoading())
     action.promisePayload.then(res => {
       const newAction = { ...action, promisePayload: res }
 
@@ -14,8 +17,10 @@ export default function({dispatch}) {
           return item.title.indexOf(action.courseCurLang)>=0;
         });
       }
-
       dispatch(newAction);
+      setTimeout(()=>{
+        dispatch(hideLoading());
+      }, 700)
     });
   };
 }

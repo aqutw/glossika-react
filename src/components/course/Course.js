@@ -40,7 +40,10 @@ export class Course extends React.Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    this.fetchCourseHandler(nextProps.curLang);
+    console.log('nextProps.curLang, this.props.curLang', nextProps.curLang, this.props.curLang)
+    if (nextProps.curLang !== this.props.curLang) {
+      this.fetchCourseHandler(nextProps.curLang);
+    }
   }
 
   render() {
