@@ -1,7 +1,7 @@
 import { FETCH_POSTS, FETCH_POST_BY_TITLE } from './types';
 import axios from 'axios';
 
-export function fetchPosts() {
+export function fetchPostsAction() {
   const request = axios.get('/json/blog-posts.json');
   return {
     type: FETCH_POSTS,
@@ -9,7 +9,7 @@ export function fetchPosts() {
   };
 }
 
-export function fetchPostByTitle(title) {
+export function fetchPostByTitleAction(title) {
   const request = axios.get('/json/blog-post.json');
   return {
     type: FETCH_POST_BY_TITLE,

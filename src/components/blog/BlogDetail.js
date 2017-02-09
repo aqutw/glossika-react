@@ -13,7 +13,7 @@ function mapStateToProps(state) {
 
 export class BlogDetail extends React.Component {
   static propTypes = {
-    fetchPostByTitle: React.PropTypes.func.isRequired,
+    fetchPostByTitleAction: React.PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -21,7 +21,7 @@ export class BlogDetail extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchPostByTitle(this.props.routeParams.blogSlug);
+    this.props.fetchPostByTitleAction(this.props.routeParams.blogSlug);
   }
 
   render() {

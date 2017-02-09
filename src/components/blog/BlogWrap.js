@@ -19,7 +19,7 @@ function mapStateToProps(state) {
 export class Blog extends React.Component {
   static propTypes = {
     navOpenAction: React.PropTypes.func.isRequired,
-    fetchPosts: React.PropTypes.func.isRequired,
+    fetchPostsAction: React.PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -27,7 +27,7 @@ export class Blog extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchPosts();
+    this.props.fetchPostsAction();
   }
 
   render() {
