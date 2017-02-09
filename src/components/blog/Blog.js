@@ -28,11 +28,10 @@ export class Blog extends React.Component {
   render() {
     console.log('this.props', this.props);
     const { aryBlogArticles } = this.props;
-
     return (
-      <BlogWrap>{aryBlogArticles.map(v=>{
+      <BlogWrap>{[aryBlogArticles.map(v=>{
         return (<BlogPost key={v.title} post={v} />);
-      })}</BlogWrap>
+      })]}</BlogWrap>
     );
   }
 }
