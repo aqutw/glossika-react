@@ -35,9 +35,7 @@ export class BlogDetail extends React.Component {
             </section>
         </header>
 
-        <section className="post-content">
-        {postContent}
-        </section>
+        <section className="post-content" dangerouslySetInnerHTML={{__html:postContent}} />
 
         <div id="fb-root" className=" fb_reset"><div style={{position:'absolute', top:'-10000px', width:'0px', height:'0px'}}><div><iframe name="fb_xdm_frame_https" frameBorder="0" allowTransparency="true" allowFullScreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabIndex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/0eWevUAMuoH.js?version=42#channel=f1fcfdfc15a07bc&amp;origin=https%3A%2F%2Fglossika.com" style={{border:'none'}}></iframe></div></div><div style={{position:'absolute', top:'-10000px', width:'0px', height:'0px'}}><div></div></div></div>
         <div className="fb-comments fb_iframe_widget" data-href="https://glossika.com/blog/nowe-technologie-w-nauce-jezykow-obcych/" data-numposts="5" fb-xfbml-state="rendered"><span style={{width:'550px', height:'175px'}}><iframe id="fab7070d504b24" name="f781955b46aa98" scrolling="no" title="Facebook Social Plugin" className="fb_ltr" src="https://www.facebook.com/plugins/comments.php?api_key=1139051342778328&amp;channel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F0eWevUAMuoH.js%3Fversion%3D42%23cb%3Dfac8c3f0434008%26domain%3Dglossika.com%26origin%3Dhttps%253A%252F%252Fglossika.com%252Ff1fcfdfc15a07bc%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fglossika.com%2Fblog%2Fnowe-technologie-w-nauce-jezykow-obcych%2F&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;version=v2.4&amp;width=550" style={{width:'550px', overflow:'hidden', border:'none', height:'175px'}}></iframe></span></div>
