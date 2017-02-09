@@ -7,6 +7,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import App from './components/app';
 import Home from './components/home/Home';
 import Blog from './components/blog/Blog';
+import BlogDetail from './components/blog/BlogDetail';
 import Course from './components/course/Course';
 import CourseDetail from './components/course/CourseDetail';
 import Help from './components/help/Help';
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
         <Route path="blog" component={Blog} />
+        <Route path="blog/:blogSlug" component={BlogDetail} />
         <Route path="courses" component={Course} />
         <Route path="courses/:courseName" component={CourseDetail} />
         <Route path="howto" component={Help} />
