@@ -3,10 +3,9 @@ import { connect } from 'react-redux';
 import BlogHeader from './BlogHeader';
 import BlogFooter from './BlogFooter';
 import BlogNav from './BlogNav';
-import BlogPost from './BlogPost';
+import BlogPost from '../../components/BlogPost';
 import * as NavActions from '../../actions/nav-actions';
 import * as BlogActions from '../../actions/blog-actions';
-
 
 function mapStateToProps(state) {
   console.warn(state)

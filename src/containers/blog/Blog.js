@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import BlogWrap from './BlogWrap';
-import BlogPost from './BlogPost';
+import BlogPost from '../../components/BlogPost';
 import * as BlogActions from '../../actions/blog-actions';
-
 
 function mapStateToProps(state) {
   console.warn(state)
