@@ -5,16 +5,16 @@ import { createStore, applyMiddleware } from 'redux';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 import { loadingBarMiddleware } from 'react-redux-loading-bar'
-import App from './components/app';
-import Home from './components/home/Home';
-import Blog from './components/blog/Blog';
-import BlogDetail from './components/blog/BlogDetail';
-import Course from './components/course/Course';
-import CourseDetail from './components/course/CourseDetail';
-import Help from './components/help/Help';
-import FAQ from './components/faq/FAQ';
-import SignUp from './components/signup/SignUp';
-import NotFound from './components/NotFound';
+import App from './containers/app';
+import Home from './containers/home/Home';
+import Blog from './containers/blog/Blog';
+import BlogDetail from './containers/blog/BlogDetail';
+import Course from './containers/course/Course';
+import CourseDetail from './containers/course/CourseDetail';
+import Help from './containers/help/Help';
+import FAQ from './containers/faq/FAQ';
+import SignUp from './containers/signup/SignUp';
+import NotFound from './containers/NotFound';
 import reducers from './reducers';
 import Async from './middlewares/async';
 import Test1 from './middlewares/test1';
