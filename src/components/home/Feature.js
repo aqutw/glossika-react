@@ -1,11 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class Feature extends React.Component {
   static propTypes = {
@@ -52,7 +45,4 @@ export class Feature extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(Feature)
+export default Feature

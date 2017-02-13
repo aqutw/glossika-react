@@ -1,15 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Header from '../Header';
 import Footer from '../Footer';
 import { Link } from 'react-router';
 import '../../../css/shop.css';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class CourseDetail extends React.Component {
   static propTypes = {
@@ -1006,7 +999,4 @@ export class CourseDetail extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(CourseDetail)
+export default CourseDetail

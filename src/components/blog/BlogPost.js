@@ -1,12 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class BlogPost extends React.Component {
   static propTypes = {
@@ -39,7 +32,4 @@ export class BlogPost extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(BlogPost)
+export default BlogPost

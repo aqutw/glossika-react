@@ -1,11 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class EnterEmailBox extends React.Component {
   static propTypes = {
@@ -49,7 +42,4 @@ export class EnterEmailBox extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(EnterEmailBox)
+export default EnterEmailBox;

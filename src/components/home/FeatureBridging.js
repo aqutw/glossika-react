@@ -1,11 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class FeatureBridging extends React.Component {
   static propTypes = {
@@ -29,7 +22,4 @@ export class FeatureBridging extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(FeatureBridging)
+export default FeatureBridging;

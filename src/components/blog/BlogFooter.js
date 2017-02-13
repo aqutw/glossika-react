@@ -1,11 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class BlogFooter extends React.Component {
   static propTypes = {
@@ -25,7 +18,4 @@ export class BlogFooter extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(BlogFooter)
+export default BlogFooter

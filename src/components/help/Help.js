@@ -1,13 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Header from '../Header';
 import Footer from '../Footer';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class Help extends React.Component {
   static propTypes = {
@@ -92,7 +85,4 @@ export class Help extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(Help)
+export default Help

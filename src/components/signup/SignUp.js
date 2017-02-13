@@ -1,13 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import '../../../css/auth.css';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class SignUp extends React.Component {
   static propTypes = {
@@ -49,7 +42,4 @@ export class SignUp extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(SignUp)
+export default SignUp

@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import Hero from './Hero';
 import Intro from './Intro';
@@ -15,11 +14,6 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 import '../../../css/home.css';
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class Home extends React.Component {
   static propTypes = {
@@ -42,7 +36,4 @@ export class Home extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(Home)
+export default Home

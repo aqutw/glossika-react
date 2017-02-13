@@ -1,11 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-
-  };
-}
 
 export class FeatureChallenge extends React.Component {
   static propTypes = {
@@ -28,7 +21,4 @@ export class FeatureChallenge extends React.Component {
   }
 }
 
-export default connect(
-  mapStateToProps,
-// Implement map dispatch to props
-)(FeatureChallenge)
+export default FeatureChallenge;
